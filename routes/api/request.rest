@@ -1,0 +1,32 @@
+
+// Get auth user
+GET http://localhost:5000/api/auth
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYzZjQwZGExYzNmOTU0Njk0NTk1YzQ0In0sImlhdCI6MTU5ODA0NjQwNiwiZXhwIjoxNTk4ODA2NDA2fQ.M1ughE4o7tqeHXlCgO9fQedb1Fdefhl1zCkIvy_0b6k
+
+###
+
+// Login User
+POST  http://localhost:5000/api/auth
+Content-Type: application/json
+
+{
+    "email" : "silavsale@gmail.com",
+    "password" : "123456"
+}
+###
+
+// Register User
+POST  http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "name" : "mike tyson",
+    "email" : "mike@gmail.com",
+    "password" : "tyson1"
+}
+
+###
+
+// Show users
+GET  http://localhost:5000/api/users/
+Content-Type: application/json

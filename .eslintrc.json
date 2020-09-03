@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2020": true
+  },
+  "extends": ["plugin:react/recommended", "google"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11
+  },
+  "plugins": ["react"],
+  "rules": {
+    "no-tabs": 0,
+    "indent": [
+      "error",
+      "tab",
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": ["warn", 380],
+    "semi": ["error", "never"],
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "no-underscore-dangle": 0,
+    "no-plusplus": 0,
+    "no-invalid-this": 0,
+    "prefer-destructuring": 0,
+    "no-console": 0,
+    "no-param-reassign": 0,
+    "padded-blocks": 0,
+    "no-shadow": 0,
+    "no-unused-expressions": 0,
+    "import/no-cycle": 0,
+    "object-curly-newline": 0,
+    "max-classes-per-file": 0,
+    "comma-dangle": 0,
+    "arrow-parens": "off",
+    "linebreak-style": 0,
+    "require-jsdoc": "off",
+    "no-mixed-spaces-and-tabs": "off",
+    "object-curly-spacing": "off",
+    "new-cap": "off"
+  }
+}
